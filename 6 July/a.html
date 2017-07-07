@@ -1,0 +1,28 @@
+<script>
+//IIFE Immediately Invoked Function Expression
+	(function(){
+		console.log('Hello');
+	})()
+	var counter=function(){
+		var x=0;
+		return function(){
+			x++;
+			return x;
+		}
+	}
+	var test=function(f){
+		return f(0)+f(1)+f(-1);
+	}
+	var square=function(a){
+		return a*a;
+	}
+	console.log(test(square));
+	console.log(test(function(a){
+		return a+2;
+	}));
+	
+	test(function(a,b){
+	
+	})
+	
+</script>
